@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TPMauiLoginApp.MainPage">
+
+    <Grid>
+        <Image Source="fondo.png"
+               Aspect="Fill"
+               Opacity="0.5" />
+
+        <ScrollView>
+            <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="Center">
+
+                <Label Text="Bienvenido"
+                       FontSize="32"
+                       HorizontalOptions="Center" />
+
+                <Image Source="logo.png"
+                       HeightRequest="120"
+                       HorizontalOptions="Center" />
+
+                <Entry x:Name="entryUsuario" Placeholder="Usuario" />
+                <Entry x:Name="entryPassword" Placeholder="Contraseña" IsPassword="True" />
+
+                <!-- Botón con ícono -->
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                    <Image Source="login.svg"
+                           HeightRequest="24"
+                           WidthRequest="24" />
+                    <Button Text="Ingresar"
+                            Clicked="OnLoginClicked"
+                            BackgroundColor="#B08D57"
+                            TextColor="White"
+                            HeightRequest="45" />
+                </HorizontalStackLayout>
+
+                <Button Text="¿No tenés una cuenta? Crear una"
+                        Clicked="OnIrARegistroClicked"
+                        BackgroundColor="Transparent"
+                        TextColor="White"
+                        FontAttributes="Italic"
+                        FontSize="14" />
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

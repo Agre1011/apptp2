@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TPMauiLoginApp.AcercaPage"
+             Title="Desarrollador">
+
+    <Grid>
+        <!-- Fondo -->
+        <Image Source="fondo.png"
+               Aspect="Fill"
+               Opacity="0.5" />
+
+        <ScrollView>
+            <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="Center" HorizontalOptions="Center">
+
+                <!-- Nombre -->
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                
+                    <Image Source="persona.svg" HeightRequest="24" WidthRequest="24" />
+                    <Label Text="ALEXIS GABRIEL ROJAS ESCOBAR"
+                           FontAttributes="Bold"
+                           TextColor="White" />
+                </HorizontalStackLayout>
+
+                <!-- Correo -->
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                    <Image Source="gmail.svg" HeightRequest="24" WidthRequest="24" />
+                    <Label Text="rojasgabriel157@gmail.com"
+                           FontAttributes="Bold"
+                           TextColor="White" />
+                </HorizontalStackLayout>
+
+                <!-- Instagram -->
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                    <Image Source="instagram.svg" HeightRequest="24" WidthRequest="24" />
+                    <Label Text="@gabriel_rojas"
+                           TextColor="White" />
+                </HorizontalStackLayout>
+
+                <!-- Facebook -->
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                    <Image Source="facebook.svg" HeightRequest="24" WidthRequest="24" />
+                    <Label Text="Gabriel Rojas"
+                           TextColor="White" />
+                </HorizontalStackLayout>
+
+                <!-- Ciudad y provincia -->
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                    <Image Source="googlemaps.svg" HeightRequest="24" WidthRequest="24" />
+                    <Label Text="Santa Rosa, La Pampa"
+                           TextColor="White" />
+                </HorizontalStackLayout>
+
+                <!-- Botón volver -->
+                <Button Text="VOLVER AL MENÚ"
+                        Clicked="OnVolverClicked"
+                        BackgroundColor="#D3D3D3"
+                        TextColor="Black"
+                        CornerRadius="20"
+                        WidthRequest="200"
+                        HorizontalOptions="Center" />
+
+                <!-- Icono de home -->
+                <Image Source="home.svg"
+                       HeightRequest="30"
+                       WidthRequest="30"
+                       HorizontalOptions="Center" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
